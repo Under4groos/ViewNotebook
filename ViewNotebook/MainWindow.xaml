@@ -1,0 +1,71 @@
+﻿<Window x:Class="ViewNotebook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViewNotebook"
+        mc:Ignorable="d" Background="White" WindowStyle="None" WindowState="Maximized"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Window.Resources>
+        <Style TargetType="Polygon">
+            <Setter Property="Stroke" Value="#4d4d4d"/>
+            <Setter Property="Fill" Value="#4d4d4d"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid x:Name="grid">
+
+            <Grid Height="1000" Width="1920">
+                <Border CornerRadius="20" Height="800" Width="1400"  BorderThickness="10" BorderBrush="#4d4d4d" VerticalAlignment="Top"       >
+                    <Border.Background>
+                        <ImageBrush ImageSource="C:\Users\Maks\Documents\ShareX\Screenshots\2022-08\CrosshairGX_Uj9ny9AmOs.png"></ImageBrush>
+                    </Border.Background>
+                    <Grid>
+                        <Border Width="200" Margin="0,-1,0,0" Height="30" CornerRadius="0,0,10,10" Background="#4d4d4d" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <StackPanel Margin="15,0,10,0" Orientation="Horizontal">
+                                <Border Width="25" Height="25" Background="#4C000000" CornerRadius="12.5"/>
+                                <Border Width="18" Margin="5,0,0,0" Height="18" Background="#4C000000" CornerRadius="12.5"/>
+
+
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Border>
+
+                <Grid VerticalAlignment="Bottom"  Margin="0,0,0,125" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.95"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid Width="1600" Height="80" VerticalAlignment="Top" >
+                        <Border Background="#4d4d4d" Height="30" CornerRadius="10" VerticalAlignment="Top"/>
+                        <Polygon Margin="0,-8.4,0,0" 
+                          Points="28.7,40 1571.3,40 1400,60 200,60" StrokeThickness="4" Fill="#FF4D4D4D"
+                        />
+                    </Grid>
+
+
+
+                </Grid>
+
+
+                <Grid Visibility="Collapsed" Height="100"  VerticalAlignment="Top" Margin="200,800,200,0" >
+                    <Border CornerRadius="10,10,10,10" Background="#4d4d4d" Height="40" Width="1400" VerticalAlignment="Top">
+
+                    </Border>
+                    <Polygon Margin="0,-0.1,0,0" Stroke="#4d4d4d" Fill="#4d4d4d" 
+      Points="15,40 1400,40 800,70 420,70"
+      ></Polygon>
+
+                </Grid>
+            </Grid>
+
+
+        </Grid>
+
+    </Grid>
+</Window>
